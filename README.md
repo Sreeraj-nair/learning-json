@@ -209,6 +209,6 @@ Eg JSON for describing a menu.
 | Top level | Menu columns | array of menu column objects | | 
 | &nbsp; &nbsp; header | Name of the column | string | | 
 | &nbsp; &nbsp; items | list of menu items under the column | array of menu items | | 
-| &nbsp; &nbsp; &bnsp; id | id of menu item | string | | 
-| &nbsp; &nbsp; &bnsp; label | id of menu item that is displayed in the UI | string | | 
+| &nbsp; &nbsp; &nbsp; id | id of menu item | string | | 
+| &nbsp; &nbsp; &nbsp; label | id of menu item that is displayed in the UI | string | | 
 
