@@ -27,5 +27,15 @@
 - Strings: text enclosed in single or double quotation marks. 
 - Numbers: integer or decimal, positive or negative without quotes. 
 
+### Simple JSON Example 
+{
+  "person" :[
+      "name": "Tom", 
+       "age": 28, 
+       "employed": true, 
+       "height": 6.5 
+   ]
+}
+
 
 
