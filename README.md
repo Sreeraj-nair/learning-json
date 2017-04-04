@@ -28,6 +28,13 @@
 - Numbers: integer or decimal, positive or negative without quotes. 
 
 ### Simple JSON Example 
+    Eg. 1 JSON with key value pairs alone - 
+    {
+      "location": "trivandrum"
+      "temperature": 35.5
+    }
+    
+    Eg. 2 JSON with JSON array - 
     {
       "person" :[
           "name": "Tom", 
@@ -36,6 +43,44 @@
           "height": 6.5 
       ]
     }
+    
+    Eg 3 JSON with nested elements - 
+    [
+    {
+        "header": "File",
+        "items": [
+            {
+                "id": "Open",
+                "label": "Open"
+            },
+            {
+                "id": "New",
+                "label": "New"
+            },
+            {
+                "id": "Close",
+                "label": "Close"
+            }
+        ]
+    },
+    {
+        "header": "View",
+        "items": [
+            {
+                "id": "ZoomIn",
+                "label": "Zoom In"
+            },
+            {
+                "id": "ZoomOut",
+                "label": "Zoom Out"
+            },
+            {
+                "id": "OriginalView",
+                "label": "Original View"
+            }
+        ]
+      }
+    ]
 
 
 
