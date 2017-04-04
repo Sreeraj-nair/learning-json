@@ -134,13 +134,34 @@
 ### Explain below JSON.
 - Most JSON has nesting. 
 - Objects may include arrays, other objects and so on. 
-    
-  {
-     "employee": [
+  
+Employee eg. 
+
+      {
+        "employee": [
                 "firstName": "John", 
                 "lastName": "Michael", 
                  "age": 43
-       ] 
-  }
+        ] 
+      }
+      
+ Song eg. 
+ 
+      {
+        "song": 
+            {
+              "title": "Song Title here", 
+              "artist": "artist name here",
+              "musicians": [
+                  "AR Rehman", "KS Chitra"
+              ]
+            } 
+      }
+ 
+ | Element | Description | Type | Notes | 
+ | --------| ----------- | -----| ------|
+ | song    | Top level   | song data object | | 
+ | &nbsp; &nbsp; | Song title | string | | 
+ 
 
 
