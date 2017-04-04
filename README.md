@@ -117,8 +117,10 @@
   
   Explanation: 
                 
-                | Element | Description | Type | Notes |
-                | ------- | ----------- | ---- | ----- |
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
       
   JSONObject 
 
