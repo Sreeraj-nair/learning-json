@@ -85,6 +85,33 @@
 ### What are the APIs available for reading or writing JSON? 
 - Java doesn't have any inbuilt APIs. However, there are many APIs like json-simple-1.1.1.jar, java-json.jar, javax.json.jar. 
 
-
-
+### Explain below JSON structure below. 
+    {
+      "Employees": [
+          {
+          "name": "abc", 
+          "designation": "HR Executive", 
+          "pay": 5000
+          "contacts": [
+            {
+            "landline": "100-2123-1232", 
+            "mobile": "8989-90909"
+            }
+          ]
+          },
+          {
+           "name": "xyz", 
+          "designation": "Officer", 
+          "pay": 5000
+          "contacts": [
+            {
+            "landline": "3940-2123-1232", 
+            "mobile": "231-322"
+            }
+          ]
+          }
+      ]
+    }
+  
+    In JSON {} reprents JSON Object while [] represents JSON array.  
 
