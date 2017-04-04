@@ -82,5 +82,9 @@
       }
     ]
 
+### What are the APIs available for reading or writing JSON? 
+- Java doesn't have any inbuilt APIs. However, there are many APIs like json-simple-1.1.1.jar, java-json.jar, javax.json.jar. 
+
+
 
 
