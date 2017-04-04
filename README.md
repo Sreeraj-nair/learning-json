@@ -204,4 +204,7 @@ Eg JSON for describing a menu.
       }
     ]
     
+| Element | Description | Type | Notes | 
+| --------| ------------| -----| ------| 
+| Top level | Menu columns | array of menu column objects | | 
 
