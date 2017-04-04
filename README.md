@@ -87,6 +87,13 @@
 
 ### Explain below JSON structure below. 
     {
+        "firstName": "Tom", 
+        "lastName": "John", 
+        "age": 45, 
+        "fullTime": true
+    }
+
+    {
       "Employees": [
           {
           "name": "abc", 
@@ -119,7 +126,9 @@
                 
 | Element  | Description | Type | Notes |
 | -------- | ----------- | ---- |------ |
-
-      
+| firstName| First name  |Sting |       |
+| lastName | Last name   |Sting |       |
+| age      | Age in yrs  |Number|       |
+| fullTime | True if working full time; else false | Boolean | Full time 45 hours per week. |       
   JSONObject 
 
