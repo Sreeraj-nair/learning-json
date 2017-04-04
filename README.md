@@ -129,6 +129,18 @@
 | firstName| First name  |Sting |       |
 | lastName | Last name   |Sting |       |
 | age      | Age in yrs  |Number|       |
-| fullTime | True if working full time; else false | Boolean | Full time 45 hours per week. |       
-  JSONObject 
+| fullTime | True if working full time; else false | Boolean | Full time 45 hours per week. |
+
+### Explain below JSON.
+- Most JSON has nesting. 
+- Objects may include arrays, other objects and so on. 
+    
+  {
+     "employee": [
+                "firstName": "John", 
+                "lastName": "Michael", 
+                 "age": 43
+       ] 
+  }
+
 
