@@ -28,14 +28,14 @@
 - Numbers: integer or decimal, positive or negative without quotes. 
 
 ### Simple JSON Example 
-{
-  "person" :[
-      "name": "Tom", 
-       "age": 28, 
-       "employed": true, 
-       "height": 6.5 
-   ]
-}
+    {
+      "person" :[
+          "name": "Tom", 
+          "age": 28, 
+          "employed": true, 
+          "height": 6.5 
+      ]
+    }
 
 
 
