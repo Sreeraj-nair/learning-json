@@ -165,5 +165,43 @@ Employee eg.
  | &nbsp; &nbsp; artist | Song artist | string | | 
  | &nbsp; &nbsp; musicians | A list of musicians that play on the song | array of string | | 
  
+Eg JSON for describing a menu. 
 
+    [
+      {
+          "header": "File", 
+          "items": [
+              {
+                  "id": "Open", 
+                  "label": "Open"
+              }
+              {
+                  "id": "New", 
+                  "label": "New"
+              }
+              {
+                  "id": "Close", 
+                  "label": "Close"
+              }
+          ]     
+      }, 
+       {
+          "header": "View", 
+          "items": [
+              {
+                  "id": "ZoomIn", 
+                  "label": "Zoom In"
+              }
+              {
+                  "id": "ZoomOut", 
+                  "label": "Zoom Out"
+              }
+              {
+                  "id": "OriginalView", 
+                  "label": "Original View"
+              }
+          ]     
+      }
+    ]
+    
 
