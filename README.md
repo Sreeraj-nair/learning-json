@@ -118,7 +118,7 @@
   Explanation: 
                 
                 | Element | Description | Type | Notes |
-                | --- | --- | --- | --- |
+                | ------- | ----------- | ---- | ----- |
       
   JSONObject 
 
