@@ -281,58 +281,58 @@ Eg JSON for describing a menu.
 	import org.json.simple.JSONObject;
 	import org.json.simple.parser.JSONParser;
 
-		public class ReadNestedJSON {
+	public class ReadNestedJSON {
 	
-			public static void main(String args[]){
-		 		JSONParser parser = new JSONParser();
+		public static void main(String args[]){
+		 	JSONParser parser = new JSONParser();
 
-				try{
-			   		//JSONObject  root = (JSONObject)parser.parse(new InputStreamReader(new 								FileInputStream("D:\\Nested.json")));		
+			try{
+			   	//JSONObject  root = (JSONObject)parser.parse(new InputStreamReader(new 								FileInputStream("D:\\Nested.json")));		
 			   
-			   		// Get JSON array from the file 
-			   		JSONArray array = (JSONArray)parser.parse(new InputStreamReader(new 									FileInputStream("D:\\Nested.json")));
-			   		System.out.println("Root JSON Object: "+array);
+			   	// Get JSON array from the file 
+			   	JSONArray array = (JSONArray)parser.parse(new InputStreamReader(new 									FileInputStream("D:\\Nested.json")));
+			   	System.out.println("Root JSON Object: "+array);
 			   
-			   		// Get length of the JSONArray
-			   		int arrayLength = array.size(); 
-			   		System.out.println("JSON Array Lenght: "+arrayLength);
+			   	// Get length of the JSONArray
+			   	int arrayLength = array.size(); 
+			   	System.out.println("JSON Array Lenght: "+arrayLength);
 			   
-			   		// Get first JSON Object from the array
-			   		JSONObject object1 = (JSONObject)array.get(0); 
-			   		System.out.println("Object One: "+object1);
+			   	// Get first JSON Object from the array
+			   	JSONObject object1 = (JSONObject)array.get(0); 
+			   	System.out.println("Object One: "+object1);
 			   
-			   		// Get second JSON Object from the array
-			   		JSONObject object2 = (JSONObject)array.get(1);
-			   		System.out.println("Object One: "+object2);
+			   	// Get second JSON Object from the array
+			   	JSONObject object2 = (JSONObject)array.get(1);
+			   	System.out.println("Object One: "+object2);
 			   
-			   		// Get JSON Object header 
-			   		String header1 = (String)object1.get("header"); 
-			   		//String headerString = header.toJSONString();
-			   		System.out.println("First Header: "+header1);
+			   	// Get JSON Object header 
+			   	String header1 = (String)object1.get("header"); 
+			   	//String headerString = header.toJSONString();
+			   	System.out.println("First Header: "+header1);
 			   
-			   		// Get items array
-			   		JSONArray items1 = (JSONArray)object1.get("items"); 
-			   		System.out.println("Items: "+items1);
+			   	// Get items array
+			   	JSONArray items1 = (JSONArray)object1.get("items"); 
+			   	System.out.println("Items: "+items1);
 			   
-					// Get items array size
-					int items1ArraySize = items1.size(); 
-					System.out.println("Items Array: " +items1ArraySize);
+				// Get items array size
+				int items1ArraySize = items1.size(); 
+				System.out.println("Items Array: " +items1ArraySize);
 
-					// Get first JSON Object from Items array
-					JSONObject firstObjectInsideItems = (JSONObject) items1.get(0);
-					System.out.println("First object within Items: "+firstObjectInsideItems);
+				// Get first JSON Object from Items array
+				JSONObject firstObjectInsideItems = (JSONObject) items1.get(0);
+				System.out.println("First object within Items: "+firstObjectInsideItems);
 
-					// Get id from first 
-					String id = (String) firstObjectInsideItems.get("id"); 
-					System.out.println("ID: "+id);
+				// Get id from first 
+				String id = (String) firstObjectInsideItems.get("id"); 
+				System.out.println("ID: "+id);
 
-					String label = (String)firstObjectInsideItems.get("label"); 
-					System.out.println("Label: "+label);
-				}
-				catch(Exception ex){
-					ex.printStackTrace();
-				}
+				String label = (String)firstObjectInsideItems.get("label"); 
+				System.out.println("Label: "+label);
 			}
-
+			catch(Exception ex){
+				ex.printStackTrace();
+			}
 		}
+
+	}
 
