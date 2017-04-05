@@ -233,7 +233,8 @@ Eg JSON for describing a menu.
                   System.out.println(currentWorkingDirectory);
                   
                   // read JSON file and parse the content in it
-                  JSONObject  rootJSONObject = (JSONObject)parser.parse(new InputStreamReader(new FileInputStream("D:\\Song.json")));	
+                  JSONObject  rootJSONObject = (JSONObject)parser.parse(new InputStreamReader(new 
+		  FileInputStream("D:\\Song.json")));	
                   
                   // read JSONObject Song as JSONObject 
                   JSONObject songObj = (JSONObject)rootJSONObject.get("song"); 
