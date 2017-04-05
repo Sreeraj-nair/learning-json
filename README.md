@@ -287,10 +287,10 @@ Eg JSON for describing a menu.
 		 	JSONParser parser = new JSONParser();
 
 			try{
-			   	//JSONObject  root = (JSONObject)parser.parse(new InputStreamReader(new 							FileInputStream("D:\\Nested.json")));		
+	//JSONObject  root = (JSONObject)parser.parse(new InputStreamReader(new FileInputStream("D:\\Nested.json")));		
 			   
 			   	// Get JSON array from the file 
-			   	JSONArray array = (JSONArray)parser.parse(new InputStreamReader(new 								FileInputStream("D:\\Nested.json")));
+	JSONArray array = (JSONArray)parser.parse(new InputStreamReader(new FileInputStream("D:\\Nested.json")));
 			   	System.out.println("Root JSON Object: "+array);
 			   
 			   	// Get length of the JSONArray
