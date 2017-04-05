@@ -212,3 +212,61 @@ Eg JSON for describing a menu.
 | &nbsp; &nbsp; &nbsp; id | id of menu item | string | | 
 | &nbsp; &nbsp; &nbsp; label | id of menu item that is displayed in the UI | string | | 
 
+### Java code to read JSON file. 
+- Download JSON.simple » 1.1.1 from maven repository and add it to the eclipse library. 
+- Below is the code snippet to read values from a JSON file. 
+      
+      import java.io.FileInputStream;
+      import java.io.InputStreamReader;
+      import java.util.Iterator;
+      import org.json.simple.JSONArray;
+      import org.json.simple.JSONObject;
+      import org.json.simple.parser.JSONParser;
+      
+      public class ReadJSONFromFile{ 
+          public static void main(String args[]){ 
+              JSONParser parser = new JSONParser(); 
+              
+              try{
+                  // get current working directory 
+                  String currentWorkingDirectory = System.getProperty("user.dir"); 
+                  System.out.println(currentWorkingDirectory);
+                  
+                  // read JSON file and parse the content in it
+                  JSONObject  rootJSONObject = (JSONObject)parser.parse(new InputStreamReader(new FileInputStream("D:\\Song.json")));	
+                  
+                  // read JSONObject Song as JSONObject 
+                  JSONObject songObj = (JSONObject)rootJSONObject.get("song"); 
+                  System.out.println("Song obj: " +songObj);
+                  
+                  // convert the rootJSONObject to JSONString and store it as String
+                  String jsonObject = rootJSONObject.toJSONString(); 
+			            System.out.println("JSON Object: "+jsonObject);
+                  
+                  // other way of doing it
+                  String songObject = rootJSONObject.get("song").toString();  
+			            System.out.println("Song Object: "+songObject);
+                   
+                  // get artist
+                  String artist = songObj.get("artist").toString(); 
+			            System.out.println("Artist: "+artist);
+			            
+                  // get title 
+			            String title = songObj.get("title").toString(); 
+			            System.out.println("Title: "+title);
+	              
+                 // get hold of JSONArray
+	               JSONArray msg = (JSONArray) songObj.get("musicians");
+	               System.out.println("Msg: "+msg.toString());
+	               
+                 // iterate through the JSONArray
+	               Iterator<?> i = msg.iterator(); 
+	                 while(i.hasNext()){
+	            	   System.out.println(i.next());
+	                 }
+              }
+              catch(Exception ex){ 
+                  ex.printStackTrace(); 
+              }
+          }
+      }
